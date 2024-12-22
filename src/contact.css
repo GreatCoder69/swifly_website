@@ -1,0 +1,220 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+.background {
+    height: 640px;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10; /* Lower layer */
+}
+.header-image {
+    margin-left: 50px;
+    height: 80px;
+    width: auto;
+}
+.button-container .btn {
+    margin-right: 40px; /* Adjust spacing between buttons */
+    border-radius: 10px; /* Rounded edges */
+}
+.button-container .btn.norm-btn {
+    background-color: white;
+    color: rgb(161, 161, 161);
+}
+.button-container .btn:hover,
+.button-container .btn:focus {
+    background-color: rgb(255, 89, 0);
+    color: white;
+}
+.button-container .btn.orange-btn {
+    background-color: rgb(255, 89, 0);
+    color: white;
+}
+/*Till this is header CSS*/
+
+/* Bottom-Left Image Styling */
+.bottom-left-image {
+    position: absolute;
+    top:490px;
+    left:0;
+    width: 207px; /* Adjust size */
+    height: 237px;
+    z-index:250;
+}
+.custom-container {
+    position:absolute;
+    z-index: 1000; /* Layer priority */
+    width:60%;  /* Ensure it doesn't overflow */
+    left:0;
+}
+.section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top:110px;
+    margin-left:200px;
+    color: white;
+    line-height: 1.2;
+}
+.section-text2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top:50px;
+    margin-left:200px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.orange-btn {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.custom-container .button-section .orange-btn{
+    margin-left:200px;
+    margin-top:60px;
+    border-radius: 10px;
+}
+.orange-btn:hover {
+    background-color: rgb(255, 120, 0);
+}
+.right-container{
+    right:0;
+    width:40%;
+    z-index:1000;
+    position:absolute;
+}
+.bike{
+    height:640px;
+    width:auto;
+    right:0;
+}
+footer {
+    height: 600px;
+    top:730px;
+    width: 100%;
+    z-index: 500; /* Ensure it appears above other elements */
+    position: absolute; /* Keep it within the normal flow */
+    background-color: white; /* Add a background color if needed */
+}
+/* Upper Footer */
+.footer-upper {
+    display: flex;
+    justify-content: space-between; /* Distribute containers evenly */
+    align-items: center; /* Center content vertically */
+    height: 200px; /* Matches the top image height */
+    width: 100%;
+    background-image: url('../img/footerup.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container-1,
+.footer-container-2,
+.footer-container-3 {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.footer-upper .footer-container-2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 45px;
+}
+.footer-upper .footer-container-3 .footer-button{
+    background-color: #010239;
+    padding: 20px 80px;
+    font-size:25px;
+    font-weight:800px;
+
+}
+
+.footer-container-1 {
+    width: 20%;
+}
+
+.footer-container-2 {
+    width: 40%;
+}
+
+.footer-container-3 {
+    width: 40%;
+}
+
+.footer-container-3 .footer-button {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-container-3 .footer-button:hover {
+    background-color: rgb(255, 120, 0);
+}
+
+/* Lower Footer */
+.footer-lower {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between containers */
+    align-items: center; /* Center content vertically */
+    height: 400px; /* Matches the lower image height */
+    width: 100%;
+    background-image: url('../img/footerdown.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Space for content inside */
+}
+
+.footer-lower-container {
+    width: 25%; /* Four equal containers */
+    text-align: center; /* Center all text */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally within container */
+    justify-content: center; /* Center vertically within container */
+}
+
+.footer-lower-container img {
+    width: 80%; /* Adjust image size */
+    height: auto;
+    margin-bottom: 10px; /* Space below image */
+}
+.temp1{
+    margin: 5px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.temp2{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.temp3{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight:600px;
+}
+

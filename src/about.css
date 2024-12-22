@@ -1,0 +1,138 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.background {
+    height: 640px;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10; /* Lower layer */
+}
+.homebike {
+    position: absolute; /* Absolute positioning for stacking */
+    left: 0; /* Align to the right */
+    z-index: 200; /* Higher layer to appear on top of the background */
+    height:630px;
+}
+.header-image {
+    margin-left: 50px;
+    height: 80px;
+    width: auto;
+}
+.button-container .btn {
+    margin-right: 40px; /* Adjust spacing between buttons */
+    border-radius: 10px; /* Rounded edges */
+}
+.button-container .btn.norm-btn {
+    background-color: white;
+    color: rgb(161, 161, 161);
+}
+.button-container .btn:hover,
+.button-container .btn:focus {
+    background-color: rgb(255, 89, 0);
+    color: white;
+}
+.button-container .btn.orange-btn {
+    background-color: rgb(255, 89, 0);
+    color: white;
+}
+/*Till this is header CSS*/
+.right-container 
+{
+    width: 800px; /* Fixed width */
+    right:0;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Add spacing between sections */
+    position:absolute;
+    z-index:400;
+}
+.section-image {
+    margin-top:70px;
+    margin-left:40px;
+    width: 181px;
+    height: 96px; /* Maintain aspect ratio */
+}
+.section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top:20px;
+    margin-left:50px;
+    color: #474747;
+    line-height: 1.2;
+}
+.section-text2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top:20px;
+    margin-left:50px;
+    color: #7f7e7e;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.button-section {
+    margin-top:30px;
+    margin-left:50px;
+    display: flex;
+    align-items: center;
+}
+.orange-btn {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    margin-left:60px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right:20px;
+}
+.orange-btn:hover {
+    background-color: rgb(255, 120, 0);
+}
+.background1{
+    margin-top:640px;
+    height: 660px;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10;
+}
+.heading1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top:50px;
+    margin-left:50px;
+    color: #474747;
+    line-height: 1.2;
+    z-index:100;
+    margin-top:640px;
+    position:relative;
+}
+.custom-container {
+    position: relative; /* Maintain relative positioning */
+    z-index: 200; /* Layer priority */
+    margin: 0; /* Reset any margins */
+    padding: 0; /* Reset any padding */
+    width: 100vw; /* Full width of the viewport */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    justify-content: space-between;
+    align-items: center;
+}
+.gridimg{
+    width:auto;
+    height:500px;
+}
+.col-md-4 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;      /* Ensure text inside the column is centered */
+    padding: 10px;
+}
