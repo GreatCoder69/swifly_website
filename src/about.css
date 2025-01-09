@@ -17,7 +17,7 @@
     position: absolute; /* Absolute positioning for stacking */
     left: 0; /* Align to the right */
     z-index: 200; /* Higher layer to appear on top of the background */
-    height:630px;
+    height:90%;
 }
 .header-image {
     margin-left: 50px;
@@ -44,7 +44,7 @@
 /*Till this is header CSS*/
 .right-container 
 {
-    width: 800px; /* Fixed width */
+    width: 55%; /* Fixed width */
     right:0;
     display: flex;
     flex-direction: column; /* Stack sections vertically */
@@ -96,13 +96,6 @@
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
 }
-.background1{
-    margin-top:640px;
-    height: 660px;
-    width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10;
-}
 .heading1 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -112,7 +105,7 @@
     color: #474747;
     line-height: 1.2;
     z-index:100;
-    margin-top:640px;
+    margin-top:45%;
     position:relative;
 }
 .custom-container {
@@ -135,4 +128,36 @@
     align-items: center;     /* Center vertically */
     text-align: center;      /* Ensure text inside the column is centered */
     padding: 10px;
+}
+@media (max-width: 1250px) {
+    .right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .background{
+        height:405%;
+    }
+    .homebike {
+        position: relative; 
+        right: auto;
+        margin: 20px auto 0; 
+        max-width: 80%; 
+        display: block;
+    }
+    .heading1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        margin-top:50px;
+        margin-left:50px;
+        color: #474747;
+        line-height: 1.2;
+        z-index:100;
+        margin-top:10%;
+        position:relative;
+    }
 }
