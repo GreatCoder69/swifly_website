@@ -68,7 +68,7 @@
     z-index:100;
 }
 .crowd{
-    margin-left:30px;
+    margin-left:17%;
     padding:50px;
     height: 650px;
     width:650px;
@@ -203,8 +203,9 @@
 .right-container3{
     right:0;
     width:50%;
-    margin-top:780px;
     z-index:500;
+    margin-top:55%;
+    position:absolute;
 }
 .right-container3 .section-text1 {
     font-family: 'Inter', sans-serif;
@@ -245,4 +246,94 @@
     transform: scaleX(-1);
     width: 144px;
     height: 76px;
+}
+@media (max-width: 1250px) {
+    .left-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .right-container,.custom-container,.right-container3{
+        top:10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .right-container3 .section-text1,.right-container3 .section-text2{
+        margin-left:15%;
+    }
+    .right-container3 .button-section .orange-btn
+    {
+        margin-left:40%;
+    }
+    
+    .background2{
+        top:217%;
+    }
+    .left-container3 .bike{
+        margin:0 auto;
+    }
+    .right-container3 .section-image{
+        width:70px;
+        height:70px;
+        margin-left:40%;
+        margin-top:20px;
+    }
+    .right-container3 .logo {
+        top:780px;
+        margin-left:30%;
+        transform: scaleX(-1);
+        width: 144px;
+        height: 76px;
+    }
+    .left-container3{
+        top:40px;
+        margin:0 auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .crowd{
+        margin:0 auto;
+    }
+    .section-text1{
+        margin-top:0;
+    }
+    .right-container1 .bike{
+        margin-left:10%;
+        width:490px;
+        height:530px;
+    }
+    .whitebg,.whitebg1,.whitebg2{
+        display: none;
+    }
+    .background1{
+        top:80%;
+    }
+    .right-container1{
+        top:30px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .custom-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        width: 100%; 
+        margin: 0 auto;
+    }
 }
