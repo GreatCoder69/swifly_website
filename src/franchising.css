@@ -70,8 +70,8 @@
 .crowd{
     margin-left:17%;
     padding:50px;
-    height: 650px;
-    width:650px;
+    height: 42vw;
+    width:auto;
     border-radius: 10px;
 }
 .section-text1 {
@@ -121,7 +121,7 @@
 }
 .custom-container .section-image {
     margin-top:40px;
-    margin-left:30%;
+    margin-left:15%;
     width: 72px;
     height: 73px; /* Maintain aspect ratio */
     position:relative;
@@ -167,9 +167,9 @@
     z-index:100;
 }
 .right-container1 .bike{
-    margin-left:200px;
-    width:490px;
-    height:530px;
+    margin:0 auto;
+    width:auto;
+    height:33vw;
 }
 .logo{
     margin-top:10px;
@@ -196,9 +196,9 @@
     z-index:500;
 }
 .left-container3 .bike{
-    margin-left:120px;
-    width:545px;
-    height:636px;
+    margin-left:30%;
+    width:auto;
+    height:42vw;
 }
 .right-container3{
     right:0;
@@ -247,7 +247,7 @@
     width: 144px;
     height: 76px;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
     .left-container{
         display: block;
         justify-content: center;
@@ -272,9 +272,11 @@
     {
         margin-left:40%;
     }
-    
+    .background{
+        height:80%;
+    }
     .background2{
-        top:217%;
+        top:210%;
     }
     .left-container3 .bike{
         margin:0 auto;
@@ -304,6 +306,7 @@
     }
     .crowd{
         margin:0 auto;
+        height:100%
     }
     .section-text1{
         margin-top:0;
@@ -317,7 +320,7 @@
         display: none;
     }
     .background1{
-        top:80%;
+        top:72%;
     }
     .right-container1{
         top:30px;
@@ -335,5 +338,10 @@
         position: relative; 
         width: 100%; 
         margin: 0 auto;
+    }
+    .left-container3 .bike{
+        margin:0 auto;
+        width:auto;
+        height:90%;
     }
 }
