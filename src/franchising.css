@@ -275,9 +275,6 @@
     .background{
         height:80%;
     }
-    .background2{
-        top:210%;
-    }
     .left-container3 .bike{
         margin:0 auto;
     }
@@ -288,7 +285,6 @@
         margin-top:20px;
     }
     .right-container3 .logo {
-        top:780px;
         margin-left:30%;
         transform: scaleX(-1);
         width: 144px;
@@ -313,14 +309,11 @@
     }
     .right-container1 .bike{
         margin-left:10%;
-        width:490px;
-        height:530px;
+        width:auto;
+        height:42vw;
     }
     .whitebg,.whitebg1,.whitebg2{
         display: none;
-    }
-    .background1{
-        top:72%;
     }
     .right-container1{
         top:30px;
@@ -339,9 +332,34 @@
         width: 100%; 
         margin: 0 auto;
     }
-    .left-container3 .bike{
+    .right-container1 .bike{
         margin:0 auto;
         width:auto;
         height:90%;
+    }
+    .left-container3 .bike{
+        margin:20 auto;
+        width:auto;
+        position:relative;
+        height:90%;
+    }
+    .background,.background1.background2{
+        height:440%;
+        width:100%;
+    }
+    .custom-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center elements vertically */
+        align-items: center; /* Center elements horizontally */
+        width: 100%; 
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .custom-container .button-section .orange-btn {
+        margin: 20px auto; /* Center the button horizontally */
+        padding: 10px 20px; /* Ensure padding is responsive */
+        border-radius: 10px;
     }
 }
