@@ -6,47 +6,78 @@
     height: 90px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space out content evenly */
+    padding: 0 2%; /* Add some horizontal padding */
+    box-shadow: none; /* Subtle shadow for better visibility */
 }
-.background {
-    height: 640px;
-    width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10; /* Lower layer */
-}
+
 .header-image {
-    margin-left: 50px;
-    height: 80px;
-    width: auto;
+    margin-left: 0; /* Reduced margin for smaller screens */
+    height: 70px; /* Smaller height for better scaling */
+    width: auto; /* Maintain aspect ratio */
 }
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 5%; /* Space between buttons */
+}
+
 .button-container .btn {
-    margin-right: 40px; /* Adjust spacing between buttons */
-    border-radius: 10px; /* Rounded edges */
+    margin-right: 0; /* Remove margin-right for better wrapping */
+    border-radius: 10px;
+    padding: 8px 15px; /* Smaller padding for better fit */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    flex: 0 1 auto; /* Allow buttons to shrink/grow based on space */
 }
+
 .button-container .btn.norm-btn {
     background-color: white;
-    color: rgb(161, 161, 161);
+    color: rgb(161, 161, 161); /* Add border for visibility */
 }
+
 .button-container .btn:hover,
 .button-container .btn:focus {
     background-color: rgb(255, 89, 0);
     color: white;
+    border: none;
 }
+
 .button-container .btn.orange-btn {
     background-color: rgb(255, 89, 0);
     color: white;
 }
+
 .orange-btn {
     background-color: rgb(255, 89, 0);
     color: white;
     border: none;
-    margin-left:60px;
+    margin-left: 1%;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-right:20px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
+
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
+}
+
+
+/* HEADER */
+.right-container .button-section{
+    margin-left:8%;
+}
+.right-container3 .section-image{
+    margin-left:0%;
+}
+.background {
+    height: 640px;
+    width: 100%;
+    position: absolute; 
+    z-index: 10;
 }
 .left-container{
     left:0;
@@ -238,7 +269,7 @@
 .right-container3 .section-image{
     width:70px;
     height:70px;
-    margin-left:270px;
+    margin-left:220px;
     margin-top:20px;
 }
 .right-container3 .logo {
@@ -248,7 +279,95 @@
     height: 76px;
 }
 @media (max-width: 1000px) {
-    .left-container{
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+  
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        margin-right: 20px;
+    }
+  
+    .burger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        border-radius: 3px;
+    }
+  
+  /* Dropdown Menu (Initially Hidden) */
+    .button-container {
+        display:none;
+    }
+  
+    .button-container .btn {
+        margin-right: 20px;
+    }
+    .btn.norm-btn{
+        display:none;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .dropdown-menu .btn {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+  
+  
+    /* Show Burger Icon */
+    .burger-menu {
+      display: flex;
+    }
+  
+    /* Hide Buttons in Header */
+    .button-container {
+      display: none;
+    }
+  
+    /* Show Dropdown when Burger Icon is Active */
+    .burger-menu.active + .dropdown-menu {
+      display: flex;
+    }
+    .header-image{
+        margin-left:0;
+    }
+    /* Align Logo and Download Button */
+    .container-fluid.button-container {
+      display:none;
+    }
+    /* Adjust Download Button */
+    .button-container .orange-btn {
+      margin-right: 20px;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    .section-text1,.section-text2{
+        margin:0 auto;
+    }
+    .left-container,.right-container1,.left-container3{
         display: block;
         justify-content: center;
         align-items: center;
@@ -263,26 +382,44 @@
         align-items: center;
         position: relative; 
         width: 100%; 
-        margin: 0 auto;
+        margin: 0;
     }
-    .right-container3 .section-text1,.right-container3 .section-text2{
-        margin-left:15%;
+    .right-container3 .section-text2{
+        margin-left:18%;
+    }
+    .right-container3 .section-text1{
+        margin-left: 27%;
     }
     .right-container3 .button-section .orange-btn
     {
         margin-left:40%;
     }
+    .custom-container .section-text1,.custom-container .section-text2{
+        padding-top:10%;
+        margin:0 auto;
+    }
+    .right-container .section-text1,.right-container .section-text2{
+        margin:0 auto;
+    }
+    .custom-container .button-section,.custom-container .section-image{
+        margin:0 auto;
+    }
     .background{
         height:80%;
     }
-    .left-container3 .bike{
+    .right-container3{
         margin:0 auto;
+        padding-top:0;
     }
     .right-container3 .section-image{
+        padding-top:0;
+        position:relative;
         width:70px;
         height:70px;
         margin-left:40%;
-        margin-top:20px;
+    }
+    .right-container1 .logo{
+        margin-left:40%;
     }
     .right-container3 .logo {
         margin-left:30%;
@@ -302,15 +439,14 @@
     }
     .crowd{
         margin:0 auto;
-        height:100%
+        height:100%;
+    }
+    .right-container1 .bike,.left-container3 .bike{
+        margin-left:8%;
+        height:80%;
     }
     .section-text1{
         margin-top:0;
-    }
-    .right-container1 .bike{
-        margin-left:10%;
-        width:auto;
-        height:42vw;
     }
     .whitebg,.whitebg1,.whitebg2{
         display: none;
@@ -324,30 +460,14 @@
         width: 100%; 
         margin: 0 auto;
     }
-    .custom-container{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        position: relative; 
-        width: 100%; 
-        margin: 0 auto;
-    }
-    .right-container1 .bike{
-        margin:0 auto;
-        width:auto;
-        height:90%;
-    }
-    .left-container3 .bike{
-        margin:20 auto;
-        width:auto;
-        position:relative;
-        height:90%;
-    }
-    .background,.background1.background2{
-        height:440%;
+    .background{
+        height:490%;
         width:100%;
     }
-    .custom-container {
+    .background1,.background2{
+        display: none;
+    }
+    .right-container,.custom-container {
         display: flex;
         flex-direction: column; /* Stack elements vertically */
         justify-content: center; /* Center elements vertically */
@@ -356,9 +476,8 @@
         margin: 0 auto;
         position: relative;
     }
-
     .custom-container .button-section .orange-btn {
-        margin: 20px auto; /* Center the button horizontally */
+        margin: 10px auto; /* Center the button horizontally */
         padding: 10px 20px; /* Ensure padding is responsive */
         border-radius: 10px;
     }
