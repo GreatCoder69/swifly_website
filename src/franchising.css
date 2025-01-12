@@ -278,7 +278,7 @@
     width: 144px;
     height: 76px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .sticky-header {
         position: sticky;
         top: 0;

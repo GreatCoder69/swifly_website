@@ -166,7 +166,7 @@
     text-align: center;      /* Ensure text inside the column is centered */
     padding: 10px;
 }
-@media (max-width: 1250px) {
+@media (max-width: 768px) {
     .sticky-header {
         position: sticky;
         top: 0;

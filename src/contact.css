@@ -341,7 +341,7 @@ footer {
     /* General Adjustments */
     .background {
         width:100%;
-        height:100%
+        height:200%
     }
 
     /* Custom Container */
@@ -361,7 +361,7 @@ footer {
         display: flex;
         justify-content: space-between; /* Distribute containers evenly */
         align-items: center; /* Center content vertically */
-        margin-top:50%;
+        margin-top:78%;
         height: 90%; /* Matches the top image height */
         width: 100%;
         background-image: url('../img/footerup.png'); /* Background image */
@@ -384,7 +384,7 @@ footer {
     }
     /* Button Adjustments */
     .right-container{
-        top:60%;
+        top:80%;
         width:100%;
         margin:0 auto;
     }
