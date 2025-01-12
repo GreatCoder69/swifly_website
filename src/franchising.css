@@ -402,7 +402,7 @@
         margin:0 auto;
     }
     .custom-container .button-section,.custom-container .section-image{
-        margin:0 auto;
+        margin:15% auto;
     }
     .background{
         height:80%;
@@ -441,18 +441,19 @@
         margin:0 auto;
         height:100%;
     }
-    .right-container1 .bike,.left-container3 .bike{
+    .left-container3 .bike{
         margin-left:8%;
         height:80%;
     }
-    .section-text1{
-        margin-top:0;
+    .right-container1 .bike{
+        width:100%;
+        height:auto;
     }
     .whitebg,.whitebg1,.whitebg2{
         display: none;
     }
     .right-container1{
-        top:30px;
+        top:50px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -476,6 +477,7 @@
         margin: 0 auto;
         position: relative;
     }
+
     .custom-container .button-section .orange-btn {
         margin: 10px auto; /* Center the button horizontally */
         padding: 10px 20px; /* Ensure padding is responsive */
