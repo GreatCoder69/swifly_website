@@ -6,36 +6,36 @@
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space out content evenly */
-    padding: 0 2%; /* Add some horizontal padding */
-    box-shadow: none; /* Subtle shadow for better visibility */
+    justify-content: space-between; 
+    padding: 0 2%; 
+    box-shadow: none; 
 }
 
 .header-image {
-    margin-left: 0; /* Reduced margin for smaller screens */
-    height: 70px; /* Smaller height for better scaling */
-    width: auto; /* Maintain aspect ratio */
+    margin-left: 0; 
+    height: 70px; 
+    width: auto; 
 }
 
 .button-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    gap: 5%; /* Space between buttons */
+    flex-wrap: wrap; 
+    gap: 5%; 
 }
 
 .button-container .btn {
-    margin-right: 0; /* Remove margin-right for better wrapping */
+    margin-right: 0; 
     border-radius: 10px;
-    padding: 8px 15px; /* Smaller padding for better fit */
-    font-size: 16px; /* Adjust font size for smaller screens */
-    flex: 0 1 auto; /* Allow buttons to shrink/grow based on space */
+    padding: 8px 15px;
+    font-size: 16px; 
+    flex: 0 1 auto; 
 }
 
 .button-container .btn.norm-btn {
     background-color: white;
-    color: rgb(161, 161, 161); /* Add border for visibility */
+    color: rgb(161, 161, 161); 
 }
 
 .button-container .btn:hover,
@@ -58,7 +58,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease; 
 }
 
 .orange-btn:hover {
@@ -71,23 +71,22 @@ body {
 .background {
     height: 640px;
     width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10; /* Lower layer */
+    position: absolute; 
+    z-index: 10;
 }
 
-/* Bottom-Left Image Styling */
 .bottom-left-image {
     position: absolute;
     top:490px;
     left:0;
-    width: 207px; /* Adjust size */
+    width: 207px; 
     height: 237px;
     z-index:250;
 }
 .custom-container {
     position:absolute;
-    z-index: 1000; /* Layer priority */
-    width:60%;  /* Ensure it doesn't overflow */
+    z-index: 1000; 
+    width:60%;  
     left:0;
 }
 .section-text1 {
@@ -140,18 +139,18 @@ footer {
     height: 600px;
     top:730px;
     width: 100%;
-    z-index: 500; /* Ensure it appears above other elements */
-    position: absolute; /* Keep it within the normal flow */
-    background-color: white; /* Add a background color if needed */
+    z-index: 500; 
+    position: absolute; 
+    background-color: white;
 }
-/* Upper Footer */
+
 .footer-upper {
     display: flex;
-    justify-content: space-between; /* Distribute containers evenly */
-    align-items: center; /* Center content vertically */
-    height: 200px; /* Matches the top image height */
+    justify-content: space-between; 
+    align-items: center; 
+    height: 200px;
     width: 100%;
-    background-image: url('../img/footerup.png'); /* Background image */
+    background-image: url('../img/footerup.png'); 
     background-size: cover;
     background-position: center;
 }
@@ -160,13 +159,13 @@ footer {
 .footer-container-2,
 .footer-container-3 {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .footer-upper .footer-container-2{
     font-family: 'Inter', sans-serif;
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600; 
     font-size: 45px;
 }
 .footer-upper .footer-container-3 .footer-button{
@@ -203,32 +202,31 @@ footer {
     background-color: rgb(255, 120, 0);
 }
 
-/* Lower Footer */
 .footer-lower {
     display: flex;
-    justify-content: space-between; /* Equal spacing between containers */
-    align-items: center; /* Center content vertically */
-    height: 400px; /* Matches the lower image height */
+    justify-content: space-between; 
+    align-items: center; 
+    height: 400px;
     width: 100%;
-    background-image: url('../img/footerdown.png'); /* Background image */
+    background-image: url('../img/footerdown.png'); 
     background-size: cover;
     background-position: center;
-    padding: 20px 0; /* Space for content inside */
+    padding: 20px 0; 
 }
 
 .footer-lower-container {
-    width: 25%; /* Four equal containers */
-    text-align: center; /* Center all text */
+    width: 25%; 
+    text-align: center; 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center horizontally within container */
-    justify-content: center; /* Center vertically within container */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .footer-lower-container img {
-    width: 80%; /* Adjust image size */
+    width: 80%; 
     height: auto;
-    margin-bottom: 10px; /* Space below image */
+    margin-bottom: 10px; 
 }
 .temp1{
     margin: 5px 0;
@@ -279,8 +277,7 @@ footer {
         background-color: black;
         border-radius: 3px;
     }
-  
-  /* Dropdown Menu (Initially Hidden) */
+
     .button-container {
         display:none;
     }
@@ -310,47 +307,41 @@ footer {
         text-align: left;
     }
   
-  
-    /* Show Burger Icon */
     .burger-menu {
       display: flex;
     }
   
-    /* Hide Buttons in Header */
     .button-container {
       display: none;
     }
   
-    /* Show Dropdown when Burger Icon is Active */
     .burger-menu.active + .dropdown-menu {
       display: flex;
     }
     .header-image{
         margin-left:0;
     }
-    /* Align Logo and Download Button */
+
     .container-fluid.button-container {
       display:none;
     }
-    /* Adjust Download Button */
+    
     .button-container .orange-btn {
       margin-right: 20px;
       padding: 10px 20px;
       border-radius: 20px;
     }
-    /* General Adjustments */
+    
     .background {
         width:100%;
         height:200%
     }
 
-    /* Custom Container */
     .custom-container {
         width: 85%;
         margin-left: 10%;
     }
 
-    /* Text Adjustments */
     .section-text1 {
         font-size: 32px;
         margin:40px auto;
@@ -359,12 +350,12 @@ footer {
     }
     .footer-upper {
         display: flex;
-        justify-content: space-between; /* Distribute containers evenly */
-        align-items: center; /* Center content vertically */
+        justify-content: space-between; 
+        align-items: center; 
         margin-top:78%;
-        height: 90%; /* Matches the top image height */
+        height: 90%; 
         width: 100%;
-        background-image: url('../img/footerup.png'); /* Background image */
+        background-image: url('../img/footerup.png'); 
         background-size: cover;
         background-position: center;
     }
@@ -382,7 +373,7 @@ footer {
     .bottom-left-image{
         display:none;
     }
-    /* Button Adjustments */
+
     .right-container{
         top:80%;
         width:100%;
@@ -395,16 +386,16 @@ footer {
     
     .footer-lower {
         display: flex;
-        justify-content: space-between; /* Equal spacing between containers */
-        align-items: center; /* Center content vertically */
-        height: 200%; /* Matches the lower image height */
+        justify-content: space-between;
+        align-items: center; 
+        height: 200%; 
         width: 100%;
-        background-image: url('../img/footerdown.png'); /* Background image */
+        background-image: url('../img/footerdown.png'); 
         background-size: cover;
         background-position: center;
-        padding: 20px 0; /* Space for content inside */
+        padding: 20px 0; 
     }
-    /* Footer Upper */
+
     .footer-upper {
         flex-direction: column;
         padding: 20px;
@@ -423,7 +414,6 @@ footer {
         padding: 10px 15px;
     }
 
-    /* Footer Lower */
     .footer-lower {
         flex-direction: column;
         padding: 20px 0;
@@ -437,7 +427,6 @@ footer {
         width: 60%;
     }
 
-    /* Font Adjustments */
     .temp1 {
         font-size: 20px;
     }

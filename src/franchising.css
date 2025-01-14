@@ -6,36 +6,36 @@
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space out content evenly */
-    padding: 0 2%; /* Add some horizontal padding */
-    box-shadow: none; /* Subtle shadow for better visibility */
+    justify-content: space-between; 
+    padding: 0 2%;
+    box-shadow: none; 
 }
 
 .header-image {
-    margin-left: 0; /* Reduced margin for smaller screens */
-    height: 70px; /* Smaller height for better scaling */
-    width: auto; /* Maintain aspect ratio */
+    margin-left: 0; 
+    height: 70px; 
+    width: auto;
 }
 
 .button-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    gap: 5%; /* Space between buttons */
+    flex-wrap: wrap; 
+    gap: 5%; 
 }
 
 .button-container .btn {
-    margin-right: 0; /* Remove margin-right for better wrapping */
+    margin-right: 0; 
     border-radius: 10px;
-    padding: 8px 15px; /* Smaller padding for better fit */
-    font-size: 16px; /* Adjust font size for smaller screens */
-    flex: 0 1 auto; /* Allow buttons to shrink/grow based on space */
+    padding: 8px 15px; 
+    font-size: 16px; 
+    flex: 0 1 auto; 
 }
 
 .button-container .btn.norm-btn {
     background-color: white;
-    color: rgb(161, 161, 161); /* Add border for visibility */
+    color: rgb(161, 161, 161);
 }
 
 .button-container .btn:hover,
@@ -58,15 +58,13 @@
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease; 
 }
 
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
 }
 
-
-/* HEADER */
 .right-container .button-section{
     margin-left:8%;
 }
@@ -88,8 +86,8 @@
     height: 640px;
     width: 40%;
     right:0;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 20; /* Lower layer */
+    position: absolute; 
+    z-index: 20;
 }
 .right-container{
     width:40%;
@@ -130,7 +128,7 @@
     margin-top:640px;
     height: 660px;
     width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
+    position: absolute; 
     z-index: 10;
 }
 .whitebg1{
@@ -138,23 +136,23 @@
     height: 660px;
     left:0;
     width: 40%;
-    position: absolute; /* Ensure it's positioned within the flow */
+    position: absolute; 
     z-index: 10;
 }
 .custom-container {
-    position: relative; /* Maintain relative positioning */
-    top: 640px; /* Offset from the top if necessary */
-    z-index: 10; /* Layer priority */
-    margin: 0; /* Reset any margins */
-    padding: 0; /* Reset any padding */
-    width: 100vw; /* Full width of the viewport */
-    max-width: 100%; /* Ensure it doesn't overflow */
+    position: relative; 
+    top: 640px; 
+    z-index: 10; 
+    margin: 0;
+    padding: 0;
+    width: 100vw; 
+    max-width: 100%; 
 }
 .custom-container .section-image {
     margin-top:40px;
     margin-left:15%;
     width: 72px;
-    height: 73px; /* Maintain aspect ratio */
+    height: 73px; 
     position:relative;
 }
 .custom-container .button-section .orange-btn{
@@ -211,7 +209,7 @@
     margin-top:780px;
     height: 660px;
     width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
+    position: absolute; 
     z-index: 10;
 }
 .whitebg2{
@@ -219,7 +217,7 @@
     height: 660px;
     right:0;
     width: 40%;
-    position: absolute; /* Ensure it's positioned within the flow */
+    position: absolute;
     z-index: 10;
 }
 .left-container3{
@@ -306,7 +304,6 @@
         border-radius: 3px;
     }
   
-  /* Dropdown Menu (Initially Hidden) */
     .button-container {
         display:none;
     }
@@ -337,28 +334,24 @@
     }
   
   
-    /* Show Burger Icon */
     .burger-menu {
       display: flex;
     }
   
-    /* Hide Buttons in Header */
     .button-container {
       display: none;
     }
   
-    /* Show Dropdown when Burger Icon is Active */
     .burger-menu.active + .dropdown-menu {
       display: flex;
     }
     .header-image{
         margin-left:0;
     }
-    /* Align Logo and Download Button */
     .container-fluid.button-container {
       display:none;
     }
-    /* Adjust Download Button */
+
     .button-container .orange-btn {
       margin-right: 20px;
       padding: 10px 20px;
@@ -470,17 +463,17 @@
     }
     .right-container,.custom-container {
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        justify-content: center; /* Center elements vertically */
-        align-items: center; /* Center elements horizontally */
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
         width: 100%; 
         margin: 0 auto;
         position: relative;
     }
 
     .custom-container .button-section .orange-btn {
-        margin: 10px auto; /* Center the button horizontally */
-        padding: 10px 20px; /* Ensure padding is responsive */
+        margin: 10px auto;
+        padding: 10px 20px; 
         border-radius: 10px;
     }
 }
