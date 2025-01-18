@@ -73,7 +73,7 @@
     position: absolute;
     right: 0; 
     z-index: 200; 
-    height:90%;
+    width:48%;
 }
 .left-container 
 {
@@ -207,14 +207,14 @@
     position: absolute; 
     left: 0; 
     z-index: 200;
-    height:100%;
+    width:45%;
     top:200%;
 }
 
 .right-container 
 {
     width: 55%;
-    right:0;
+    margin-left:43%;
     display: flex;
     flex-direction: column; 
     gap: 20px; 
@@ -283,7 +283,7 @@
 .custom-container1 {
     top:310%; 
     position:absolute;
-    z-index: 2000; 
+    z-index: 200; 
     margin: 0; 
     padding: 0; 
     width: 100vw; 
@@ -301,4 +301,418 @@
     align-items: center;     
     text-align: center;      
     padding: 10px;
+}
+/*FRANCHISING STARTS*/
+.right-container10 .button-section{
+    margin-left:8%;
+}
+.right-container30 .section-image{
+    margin-left:0%;
+}
+.background10 {
+    top:430%;
+    height: 105%;
+    width: 100%;
+    position: absolute; 
+    z-index: 10;
+}
+.left-container10{
+    left:0;
+    position:absolute;
+    z-index:100;
+}
+.whitebg10{
+    top:430%;
+    height: 100%;
+    width: 40%;
+    right:0;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 20; /* Lower layer */
+    border-radius:10px;
+}
+.right-container10{
+    right:0;
+    width:40%;
+    z-index:500;
+    top:435%;
+    position:absolute;
+}
+.left-container10 .crowd {
+    margin-left:15%;
+    padding: 50px;
+    width:40vw;
+    border-radius: 12%;
+}
+.left-container10{
+    top:430%;
+    width:60%;
+}
+.right-container10 .section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-left:50px;
+    color: #474747;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+.right-container10 .section-text2 {
+    padding-top:10px;
+    padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top:20px;
+    margin-left:50px;
+    color: #7f7e7e;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.right-container10 .button-section .orange-btn{
+    border-radius:30px;
+    padding:15px 50px;
+    font-size:18px;
+}
+.background20{
+    top:535%;
+    height: 105%;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10;
+}
+.whitebg20{
+    top:539%;
+    height: 97%;
+    left:0;
+    width: 45%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10;
+    border-radius:10px;
+}
+.custom-container20{
+    width:40%;
+    z-index:500;
+    top:535%;
+    position:absolute;
+}
+.custom-container20 .section-image {
+    margin-top:40px;
+    margin-left:25%;
+    width: 72px;
+    height: 73px; /* Maintain aspect ratio */
+    position:relative;
+}
+.custom-container20 .button-section .orange-btn{
+    margin-left:0;
+    margin-top:40px;
+    border-radius: 10px;
+    position:relative;
+    padding:15px 50px;
+    border-radius:20px;
+}
+.custom-container20 .section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    margin-left:50px;
+    color: #474747;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    position:relative;
+    margin-top:100px;
+}
+.custom-container20 .section-text2 {
+    padding-top:10px;
+    padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    margin-top:20px;
+    margin-left:50px;
+    color: #7f7e7e;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    position:relative;
+    margin-top:50px;
+}
+.right-container20{
+    flex-direction: column;
+    display: flex;
+    width:52%;
+    right:0;
+    top:530%;
+    position:absolute;
+    z-index:100;
+}
+.right-container20 .bike{
+    margin:0 auto;
+    width:auto;
+    height:42vw;
+}
+.logo{
+    width: 144px;
+    height: 76px;
+    margin-left:0;
+}
+.background30{
+    top:640%;
+    height: 105%;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10;
+}
+.whitebg30{
+    top:643%;
+    height: 97%;
+    right:0;
+    width: 43%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10;
+    border-radius:10px;
+}
+.left-container30{
+    top:645%;
+    z-index:500;
+    position:absolute;
+}
+.left-container30 .bike{
+    margin-left:30%;
+    width:auto;
+    height:42vw;
+}
+.right-container30{
+    right:0;
+    width:60%;
+    z-index:500;
+    top:647%;
+    position:absolute;
+}
+.right-container30 .section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-left:300px;
+    color: #474747;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-top:80px;
+}
+.right-container30 .section-text2 {
+    padding-top:10px;
+    padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top:30px;
+    margin-left:300px;
+    color: #7f7e7e;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.right-container30 .button-section .orange-btn{
+    margin-left:29%;
+    margin-top:0;
+    border-radius: 30px;
+    position:relative;
+    padding:15px 50px;
+}
+.right-container30 .section-image{
+    width:70px;
+    height:70px;
+    margin-left:55%;
+    margin-top:20px;
+}
+.right-container30 .logo {
+    margin-left:30%;
+    transform: scaleX(-1);
+    width: 144px;
+    height: 76px;
+}
+/*CONTACT STARTS HERE*/
+.background01 {
+    top:745%;
+    height: 100%;
+    width: 100%;
+    position: absolute; /* Ensure it's positioned within the flow */
+    z-index: 10; /* Lower layer */
+}
+
+/* Bottom-Left Image Styling */
+.bottom-left-image {
+    position: absolute;
+    top:812%;
+    left:0;
+    width: 207px; /* Adjust size */
+    height: 237px;
+    z-index:250;
+}
+.custom-container01 {
+    position:absolute;
+    top:745%;
+    z-index: 1000; /* Layer priority */
+    width:60%;  /* Ensure it doesn't overflow */
+    left:0;
+}
+.custom-container01 .section-text1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top:110px;
+    margin-left:17%;
+    color: white;
+    line-height: 1.2;
+}
+.custom-container01 .section-text2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top:50px;
+    margin-left:17%;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.custom-container01 .orange-btn {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.custom-container01 .button-section .orange-btn{
+    margin-left:13%;
+    margin-top:60px;
+    border-radius: 10px;
+}
+.orange-btn:hover {
+    background-color: rgb(255, 120, 0);
+}
+.right-container01{
+    right:0;
+    width:40%;
+    z-index:100;
+    position:absolute;
+    top:748%;
+}
+.bike01{
+    height:100%;
+    width:auto;
+    right:0;
+}
+footer {
+    height: 600px;
+    top:845%;
+    width: 100%;
+    z-index: 500; /* Ensure it appears above other elements */
+    position: absolute; /* Keep it within the normal flow */
+    background-color: white; /* Add a background color if needed */
+}
+/* Upper Footer */
+.footer-upper {
+    display: flex;
+    justify-content: space-between; /* Distribute containers evenly */
+    align-items: center; /* Center content vertically */
+    height: 200px; /* Matches the top image height */
+    width: 100%;
+    background-image: url('../img/footerup.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container-1,
+.footer-container-2,
+.footer-container-3 {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.footer-upper .footer-container-2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 45px;
+}
+.footer-upper .footer-container-3 .footer-button{
+    background-color: #010239;
+    padding: 20px 80px;
+    font-size:25px;
+    font-weight:800px;
+
+}
+
+.footer-container-1 {
+    width: 20%;
+}
+
+.footer-container-2 {
+    width: 40%;
+}
+
+.footer-container-3 {
+    width: 40%;
+}
+
+.footer-container-3 .footer-button {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-container-3 .footer-button:hover {
+    background-color: rgb(255, 120, 0);
+}
+
+/* Lower Footer */
+.footer-lower {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between containers */
+    align-items: center; /* Center content vertically */
+    height: 400px; /* Matches the lower image height */
+    width: 100%;
+    background-image: url('../img/footerdown.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Space for content inside */
+}
+
+.footer-lower-container {
+    width: 25%; /* Four equal containers */
+    text-align: center; /* Center all text */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally within container */
+    justify-content: center; /* Center vertically within container */
+}
+
+.footer-lower-container img {
+    width: 80%; /* Adjust image size */
+    height: auto;
+    margin-bottom: 10px; /* Space below image */
+}
+.temp1{
+    margin: 5px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.temp2{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.temp3{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight:600px;
 }
