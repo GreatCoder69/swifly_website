@@ -600,6 +600,14 @@ footer {
     font-weight: 600; /* Semi-bold */
     font-size: 45px;
 }
+.frantiger {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 18px; /* Adjust size if needed */
+    color: white; /* Change if necessary */
+    font-weight:600px;
+}
 .footer-upper .footer-container-3 .footer-button{
     background-color: #010239;
     padding: 20px 80px;
@@ -1195,6 +1203,16 @@ body {
     }
     .heading1{
         z-index:100;
+    }
+    .frantiger {
+        position: relative;
+        font-size: 18px; /* Adjust size if needed */
+        color: white; /* Change if necessary */
+        font-weight:600px;
+        text-align:center;
+        margin:10px auto;
+        bottom:0;
+        right:0;
     }
     footer img{
         width:50%;
