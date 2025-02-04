@@ -16,7 +16,9 @@
     height: 75px; /* Smaller height for better scaling */
     width: auto; /* Maintain aspect ratio */
 }
-
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
 .button-container {
     margin-right:15%;   
 }
@@ -41,7 +43,9 @@
     color: white;
     border: none;
 }
-
+.bruh1,.bruh2,.bruh3,.bruh4{
+    position: relative;
+}
 .button-container .btn.orange-btn {
     background-color: rgb(255, 89, 0);
     color: white;
@@ -61,35 +65,44 @@
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
 }
-
-.background {
-    height: 90%;
-    width: 100%;
-    position: absolute; 
-    z-index: 10;
-}
-
 .homebike {
-    position: absolute;
     right: 0; 
     z-index: 200; 
     width:48%;
+    position: absolute;
 }
 .left-container 
 {
     width: 100%; 
-    margin-left: 3%; 
+    padding-bottom:2%;
     display: flex;
     flex-direction: column; 
     gap: 20px; 
-    position:absolute;
     z-index:400;
+    background-color: #f3e9df;
+    z-index:10;
 }
 .section-image {
     margin-top:70px;
     margin-left:40px;
     width: 181px;
     height: 96px;
+}
+.bruh4{
+    width:100%;
+    background-color: #fff5ed;
+}
+.bruh5,.bruh7{
+    position: relative;
+    background-color:#beddf9;
+    width:100%;
+}
+.left-container30{
+    background-color:#beddf9;
+    width:60%;
+}
+.right-container30{
+    background-color: white;
 }
 .left-container .section-text1 {
     font-family: 'Inter', sans-serif;
@@ -114,6 +127,7 @@
     margin-top:20px;
     display: flex;
     align-items: center;
+    margin-left:50px;
 }
 .orange-btn {
     background-color: rgb(255, 89, 0);
@@ -146,8 +160,6 @@
     border-color: rgb(255, 89, 0);
 }
 .custom-container {
-    position: absolute; 
-    top: 100%; 
     z-index: 10; 
     margin: 0; 
     padding: 0; 
@@ -196,60 +208,53 @@
     display:block;
 }
 /*NOW IS ABOUT*/
-.background1 {
-    height: 230%;
-    width: 100%;
-    position: absolute; 
-    z-index: 10; 
-    top:200%;
-}
 .homebike1 {
-    position: absolute; 
     left: 0; 
     z-index: 200;
     width:45%;
-    top:200%;
+    position: absolute;
 }
 
 .right-container 
 {
-    width: 55%;
-    margin-left:43%;
+    width: 100%;
     display: flex;
     flex-direction: column; 
     gap: 20px; 
-    position:absolute;
     z-index:400;
-    top:200%;
+    background-color: #fff5ed;
+    padding-bottom:5%;
+    z-index:10;
 }
 .right-container .section-image {
     margin-top:70px;
-    margin-left:40px;
     width: 181px;
     height: 90px; 
     transform: scaleX(-1);
+    margin-left:47%;
 }
 .right-container .section-text1 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 60px;
     margin-top:20px;
-    margin-left:50px;
+    margin-left:47%;
     color: #474747;
     line-height: 1.2;
+    padding:10px;
 }
 .right-container .section-text2 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 22px;
     margin-top:20px;
-    margin-left:50px;
+    margin-left:47%;
     color: #bdbdbd;
     line-height: 1.5;
 }
-.button-section {
+.right-container .button-section {
     margin-top:30px;
-    margin-left:50px;
+    margin-left:47%;
     display: flex;
     align-items: center;
 }
@@ -272,17 +277,12 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 50px;
-    margin-top:50px;
     margin-left:50px;
     color: #474747;
     line-height: 1.2;
     z-index:1000;
-    top:300%;
-    position:absolute;
 }
 .custom-container1 {
-    top:310%; 
-    position:absolute;
     z-index: 200; 
     margin: 0; 
     padding: 0; 
@@ -290,11 +290,17 @@
     max-width: 100%; 
     justify-content: space-between;
     align-items: center;
+    background-color: #fff5ed;
 }
 .gridimg{
     width:90%;
     height:auto;
 }
+.bruh6,.bruh7{
+    background-color: #beddf9;
+    position:relative;
+}
+
 .custom-container1 .col-md-4 {
     display: flex;
     justify-content: center; 
@@ -305,52 +311,34 @@
 /*FRANCHISING STARTS*/
 .right-container10 .button-section{
     margin-left:8%;
+    padding-bottom:10%;
 }
 .right-container30 .section-image{
     margin-left:0%;
 }
-.background10 {
-    top:430%;
-    height: 105%;
-    width: 100%;
-    position: absolute; 
-    z-index: 10;
-}
 .left-container10{
     left:0;
-    position:absolute;
     z-index:100;
-}
-.whitebg10{
-    top:430%;
-    height: 100%;
-    width: 40%;
-    right:0;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 20; /* Lower layer */
-    border-radius:10px;
+    background-color: #beddf9;
+    width:60%;
 }
 .right-container10{
     right:0;
     width:40%;
     z-index:500;
-    top:435%;
-    position:absolute;
+    background-color: white;
+    border-radius: 10px;
 }
 .left-container10 .crowd {
-    margin-left:15%;
-    padding: 50px;
-    width:40vw;
+    width:70%;
     border-radius: 12%;
-}
-.left-container10{
-    top:430%;
-    width:60%;
+    margin: 0 12%;
 }
 .right-container10 .section-text1 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 45px;
+    margin-top:30px;
     margin-left:50px;
     color: #474747;
     line-height: 1.2;
@@ -373,141 +361,119 @@
     padding:15px 50px;
     font-size:18px;
 }
-.background20{
-    top:535%;
-    height: 105%;
-    width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10;
-}
-.whitebg20{
-    top:539%;
-    height: 97%;
-    left:0;
-    width: 45%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10;
-    border-radius:10px;
-}
-.custom-container20{
-    width:40%;
-    z-index:500;
-    top:535%;
-    position:absolute;
-}
-.custom-container20 .section-image {
-    margin-top:40px;
-    margin-left:25%;
+.right-container20 .section-image{
+    margin:40px auto;
     width: 72px;
     height: 73px; /* Maintain aspect ratio */
-    position:relative;
+    position: relative;
 }
-.custom-container20 .button-section .orange-btn{
+.right-container20 .button-section .orange-btn{
     margin-left:0;
     margin-top:40px;
     border-radius: 10px;
-    position:relative;
     padding:15px 50px;
     border-radius:20px;
 }
-.custom-container20 .section-text1 {
+.right-container20 .section-text1 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 55px;
-    margin-left:50px;
+    margin:30px auto;
     color: #474747;
     line-height: 1.2;
     padding-bottom: 10px;
     position:relative;
-    margin-top:100px;
 }
-.custom-container20 .section-text2 {
+.right-container20 .section-text2 {
     padding-top:10px;
     padding-bottom: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 23px;
-    margin-top:20px;
-    margin-left:50px;
+    margin:30px auto;
     color: #7f7e7e;
     line-height: 1.5;
     letter-spacing: 1px;
     position:relative;
-    margin-top:50px;
 }
-.right-container20{
-    flex-direction: column;
+.right-container20 .button-section{
+    margin:0 auto;
+    padding-bottom:30px;
+}
+.bruh6 .row {
+    display: grid;
+    grid-template-columns: 40% 60%; /* 60% for custom-container20, 40% for right-container20 */
+    width: 100%; /* Ensure the row takes full width */
+  }
+  
+  .right-container20 {
     display: flex;
-    width:52%;
-    right:0;
-    top:530%;
-    position:absolute;
-    z-index:100;
-}
-.right-container20 .bike{
+    flex-direction: column;
+    align-items: flex-end; /* Align content to the right */
+    padding-right: 20px; /* Optional: Add some padding */
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .custom-container20 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    padding-left: 20px; /* Optional: Add some padding */
+  }
+.custom-container20 .bike{
     margin:0 auto;
     width:auto;
     height:42vw;
+    display: flex;
+    align-items: center;
+}
+.bruh7{
+    position: relative;
+    background-color: #beddf9;
 }
 .logo{
     width: 144px;
     height: 76px;
     margin-left:0;
 }
-.background30{
-    top:640%;
-    height: 105%;
-    width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10;
-}
-.whitebg30{
-    top:643%;
-    height: 97%;
-    right:0;
-    width: 43%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10;
-    border-radius:10px;
-}
 .left-container30{
-    top:645%;
     z-index:500;
-    position:absolute;
 }
 .left-container30 .bike{
-    margin-left:30%;
+    margin:20px auto;
+    display: flex;
+    align-items: center;
     width:auto;
-    height:42vw;
+    height:40vw;
 }
 .right-container30{
     right:0;
-    width:60%;
+    width:40%;
     z-index:500;
-    top:647%;
-    position:absolute;
+    border-radius:10px;
 }
 .right-container30 .section-text1 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 45px;
-    margin-left:300px;
+    font-size: 55px;
     color: #474747;
     line-height: 1.2;
     padding-bottom: 10px;
-    margin-top:80px;
+    margin-left:8%;
+    margin-top:30px;
 }
 .right-container30 .section-text2 {
     padding-top:10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 22px;
-    margin-top:30px;
-    margin-left:300px;
+    font-size: 23px;
+    margin-left:8%;
     color: #7f7e7e;
     line-height: 1.5;
     letter-spacing: 1px;
+    margin-top:20px;
 }
 .right-container30 .button-section .orange-btn{
     margin-left:29%;
@@ -516,40 +482,42 @@
     position:relative;
     padding:15px 50px;
 }
+.right-container30 .button-section{
+    padding-bottom:30px;
+}
 .right-container30 .section-image{
     width:70px;
     height:70px;
-    margin-left:55%;
-    margin-top:20px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .right-container30 .logo {
-    margin-left:30%;
+    margin:25px 5%;
     transform: scaleX(-1);
     width: 144px;
     height: 76px;
 }
 /*CONTACT STARTS HERE*/
-.background01 {
-    top:745%;
-    height: 100%;
-    width: 100%;
-    position: absolute; /* Ensure it's positioned within the flow */
-    z-index: 10; /* Lower layer */
-}
 
+.bruh8 {
+    position: relative;
+    background-color: #1a305f;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    width: 100%; /* Ensure it takes full width */
+  }
 /* Bottom-Left Image Styling */
 .bottom-left-image {
-    position: absolute;
-    top:812%;
-    left:0;
-    width: 207px; /* Adjust size */
-    height: 237px;
-    z-index:250;
-}
+    position: absolute; /* Position the bubble image absolutely */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 100; /* Ensure it's above other content (optional) */
+  }
 .custom-container01 {
-    position:absolute;
-    top:745%;
-    z-index: 1000; /* Layer priority */
+    z-index: 110; /* Layer priority */
     width:60%;  /* Ensure it doesn't overflow */
     left:0;
 }
@@ -588,21 +556,16 @@
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
 }
-.right-container01{
-    right:0;
-    width:40%;
-    z-index:30;
-    position:absolute;
-    top:748%;
-}
-.bike01{
-    height:100%;
-    width:auto;
-    right:0;
+.bike01 {
+    position: absolute; /* Position the bike image absolutely */
+    right: 0; /* Align to the right */
+    top: 10px; /* Align to the top (optional) */
+    width: auto; /* Adjust the width as needed */
+    height: 98%; /* Maintain aspect ratio */
 }
 footer {
     height: 600px;
-    top:845%;
+    position:relative;
     width: 100%;
     z-index: 500; /* Ensure it appears above other elements */
     position: absolute; /* Keep it within the normal flow */
@@ -749,12 +712,11 @@ footer {
     .button-container {
         display:none;
     }
-  
-    .button-container .btn {
-        margin-right: 20px;
-    }
     .btn.norm-btn{
         display:none;
+        font-size:1px;
+        margin:0;
+        padding:0;
     }
     .dropdown-menu .btn {
         margin: 5px 0;
@@ -772,10 +734,10 @@ footer {
       display: flex;
     }
     header{
-        width:100vw;
+        width:100%;
     }
     .header-image{
-        height:60px;
+        height:50px;
         margin-left:0;
     }
     /* Hide Buttons in Header */
@@ -798,15 +760,36 @@ footer {
     }
     .homebike{
         width:100%;
-        position:relative;
     }
     .left-container{
         position:relative;
         margin:0 auto;
     }
+    br {
+        display: none;
+      }
+    .left-container .section-text1,.left-container .section-text2{
+        margin:20px auto;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
+        font-size:40px;
+    }
+    .left-container .section-text2{
+        font-size:15px;
+    }
     .section-image{
         width:30%;
         height:auto;
+    }
+    .left-container .button-section{
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom:20px;
+    }
+    .left-container,.homebike{
+        position: relative;
     }
     .background{
         height:165%;
@@ -815,9 +798,26 @@ footer {
         position:relative;
         margin: 0 auto;
     }
+    .custom-container .section-text1,.custom-container .section-text2{
+        text-align:center;
+        margin:40px auto;
+        padding-left:20px;
+        padding-right: 20px;
+        font-size:45px;
+    }
+    .custom-container .section-text2{
+        font-size:20px;
+    }
     .custom-container .section-image{
         width:30%;
         height:auto;
+        margin-left:10%;
+    }
+    .custom-container .button-section1{
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+
     }
     .homebike1{
         position: relative;
@@ -827,6 +827,7 @@ footer {
     }
     .custom-container1{
         position: relative;
+        margin-top:-100px;
     }
     .left-container .button-section {
         display: flex;
@@ -857,9 +858,13 @@ footer {
         position:relative;
     }
     /*BRUHHHHHHHHHHHHHHHHHHHHHHH*/
+    .bike01{
+        height:110vw;
+        width:auto;
+    }
     .background1{
         top:440%;
-        height:470%;
+        height:440%;
         position:absolute;
     }
     .homebike1{
@@ -868,16 +873,52 @@ footer {
     .right-container{
         margin:0 auto;
         width:100%;
+        padding-bottom:5%;
     }
     .right-container .section-text1{
-        font-size:55px;
+        font-size:40px;
+        margin:0 auto;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .right-container .section-text2{
-        font-size:20px;
+        font-size:15px;
+        margin:0 auto;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .right-container .button-section{
+        margin:0 auto;
+        padding-left:10%;
+        padding-right:10%;
     }
     .right-container .section-image{
         width:30%;
         height:auto;
+        margin-left:10%;
+    }
+    .right-container .button-section {
+        display: flex;
+        justify-content: center;
+        margin:20px auto;
+    }
+    .right-container .orange-btn {
+        font-size:20px;
+    }
+    footer br {
+        display: inline; /* Show <br> inside the footer */
+    }
+    .heading1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: #474747;
+        z-index:1000;
+        text-align: center;
+        margin:0 auto;
+        background-color: #fff5ed;
     }
     .background10{
         position:absolute;
@@ -887,45 +928,94 @@ footer {
     .left-container10{
         width:100%;
     }
+    .right-container30 .button-section .btn{
+        margin:0 auto;
+    }
     .left-container10 .crowd {
         margin:0 auto;
-        width:100vw;
-        border-radius: 12%;
+        margin-top:40px;
+        width:98vw;
+        height:auto;
+        padding:0;
     }
     .right-container10{
         position:relative;
         width:100%;
-        margin:10% auto;
+        padding-top:20px;
     }
-    .right-container10 .section-text2{
-        font-size:20px;
+    .right-container10 .section-text1,.right-container20 .section-text1{
+        font-size:30px;
+        margin:0 auto;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .right-container10 .section-text2,.right-container20 .section-text2{
+        font-size:15px;
+        margin:0 auto;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .right-container10 .button-section{
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
     }
     .background20{
         position:absolute;
         top:1038%;
         height:129vw;;
     }
-    .right-container20 .bike{
-        width:96vw;
+    .custom-container01 .section-text1{
+        text-align:center;
+        margin:0;
+        padding:0;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .custom-container01 .section-text2{
+        text-align:center;
+        font-size:15px;
+        margin:0;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .custom-container01 .button-section{
+        padding-bottom:30px;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-container01 .button-section .btn{
+        margin:0;
+    }
+    .custom-container20 .bike{
+        width:91vw;
         height:auto;
     }
     .right-container .logo{
         width:30%;
         height:auto;
     }
-    .custom-container20{
-        width:100%;
-    }
     .custom-container20 .section-image{
         margin:0 auto;
         margin-top:5%;
     }
+    .background10,.background20,.background30{
+        display:none;
+    }
     .custom-container20 .section-text1{
         margin:8% auto;
-        font-size:44px
+        font-size:44px;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .custom-container20 .section-text2{
         margin:8% auto;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .custom-container20 .button-section .orange-btn{
         margin:0 15%;
@@ -952,20 +1042,28 @@ footer {
     }
     .right-container30 .section-text1{
         margin:10% auto;
+        text-align: center;
+        font-size:35px;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .right-container30 .section-text2{
         margin:0 6%;
+        font-size:18px;
+        text-align: center;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .right-container30 .section-image{
         margin:0 auto;
     }
-    .right-container30 .button-section .orange-btn{
-        margin-left:10%;
+    .right-container30 .button-section{
+        margin:10% auto;
     }
+    
     .background01{
-        position:absolute;
-        top:1330%;
-        height:145%;
+        height:900px;
+        top:000px;
     }
     .bottom-left-image{
         display:none;
@@ -977,28 +1075,64 @@ footer {
         width:100%;
         left:0;
     }
+    .bike01{
+        width:100%;
+        height:auto;
+    }
     .custom-container01 .section-text2{
         margin:10% auto;
-        padding:0
+        padding-left:20px;
+        padding-right: 20px;
     }
     .custom-container01 .section-text1{
         margin:20% auto;
         font-size:35px;
+        padding-left:20px;
+        padding-right: 20px;
     }
     .right-container01 .button-section .btn .orange-btn{
         margin:0 auto;
     }
-    .right-container01 .bike01{
-        margin-top:10%;
+    .bruh6 .row{
+        display: flex; /* Change grid to flex for better stacking */
+        flex-direction: column; /* Stack containers vertically */
+    }
+    
+    .right-container20,.custom-container20 {
+        width: 100%; /* Make both containers full width */
+        align-items: center; /* Center content horizontally in mobile */
+    }
+    .right-container20 {
+        order: 2; /* Optional: Change the order of the containers if needed */
+        padding:0;
+        position:relative;
+        width:110%;
+        border-radius:0;
+      }
+    
+      .custom-container20 {
+        order: 1; /* Optional: Change the order of the containers if needed */
+      }
+    .right-container20,.custom-container20{
+        text-align:center;
+    }
+    .right-container20 .section-text1,.right-container20 .section-text2{
+        margin:0 auto;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .right-container20 .section-text1{
+        padding-top:30px;
     }
     footer{
-        top:1470%;
+        position:relative;
     }
     .footer-lower {
+        position:relative;
         display: flex;
         justify-content: space-between; /* Equal spacing between containers */
         align-items: center; /* Center content vertically */
-        height: 300vw; /* Matches the lower image height */
+        height: 100vw; /* Matches the lower image height */
         width: 100%;
         background-image: url('../img/footerdown.png'); /* Background image */
         background-size: cover;
@@ -1009,14 +1143,16 @@ footer {
     .footer-upper {
         flex-direction: column;
         padding: 20px;
-        height:140vw;
+        height:80%;
+        width:100%;
     }
-
+    .whitebg10,.whitebg20,.whitebg30{
+        display: none;
+    }
     .footer-container-1,
     .footer-container-2,
     .footer-container-3 {
         width: 100%;
-        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -1029,7 +1165,7 @@ footer {
     .footer-lower {
         flex-direction: column;
         padding: 5px 0;
-        height:300vw;
+        height:180%;
     }
     .footer-lower-container {
         width: 100%;
@@ -1043,13 +1179,16 @@ footer {
     /* Font Adjustments */
     .temp1 {
         font-size: 20px;
+        padding:0;
     }
 
     .temp2 {
         font-size: 18px;
+        padding:0;
     }
 
     .temp3 {
         font-size: 16px;
+        padding:0;
     }
 }
