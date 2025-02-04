@@ -1203,6 +1203,11 @@ body {
         height:80%;
         width:100%;
     }
+    .footer-upper .footer-container-2{
+        font-family: 'Inter', sans-serif;
+        font-weight: 600; /* Semi-bold */
+        font-size: 45px;
+    }
     .heading1{
         z-index:100;
     }
