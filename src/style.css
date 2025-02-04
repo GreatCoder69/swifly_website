@@ -321,6 +321,7 @@ html {
     z-index:100;
     background-color: #beddf9;
     width:60%;
+    padding:30px;
 }
 .right-container10{
     right:0;
@@ -332,9 +333,10 @@ html {
 .left-container10 .crowd {
     margin:0 auto;
     width:auto;
-    height:38vw;
+    height:35vw;
     display: flex;
     align-items: center;
+    border-radius:10px;
 }
 .right-container10 .section-text1 {
     font-family: 'Inter', sans-serif;
