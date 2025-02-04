@@ -332,7 +332,7 @@ html {
 .left-container10 .crowd {
     margin:0 auto;
     width:auto;
-    height:42vw;
+    height:38vw;
     display: flex;
     align-items: center;
 }
@@ -775,6 +775,9 @@ body {
     /* Align Logo and Download Button */
     .container-fluid.button-container {
       display:none;
+    }
+    .button-section1 .btn{
+        margin:0;
     }
     /* Adjust Download Button */
     .button-container .orange-btn {
