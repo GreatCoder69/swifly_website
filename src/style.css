@@ -642,7 +642,12 @@ footer {
     background-position: center;
     padding: 20px 0; /* Space for content inside */
 }
-
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 .footer-lower-container {
     width: 25%; /* Four equal containers */
     text-align: center; /* Center all text */
@@ -680,8 +685,22 @@ footer {
     font-weight:600px;
 }
 @media (max-width: 800px) {
+    html,body{
+        overflow-x:hidden;
+        width:100%;
+    }
+    body {
+        padding-top: 90px; /* Same as header height */
+    }
+    .content {
+        margin-top: 90px; /* Same as header height */
+    }
+    .bruh1 { 
+        margin-top: 90px; /* Adjust based on header height */
+    }    
+    
     .sticky-header {
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 1000;
         background-color: white;
@@ -691,7 +710,6 @@ footer {
         align-items: center;
         padding: 0 20px;
     }
-  
     .burger-menu {
         display: none;
         flex-direction: column;
@@ -738,11 +756,12 @@ footer {
     }
     .header-image{
         height:50px;
-        margin-left:0;
+        margin-left:-10px;
     }
     /* Hide Buttons in Header */
     .button-container {
       display: none;
+      margin:0;
     }
   
     /* Show Dropdown when Burger Icon is Active */
@@ -818,6 +837,15 @@ footer {
         justify-content: center;
         margin:0 auto;
 
+    }
+    .button-container {
+        margin-right:0;   
+    }
+    .button-container .btn {
+        border-radius: 10px;
+        padding: 8px 15px; /* Smaller padding for better fit */
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-left:0;
     }
     .homebike1{
         position: relative;
@@ -932,8 +960,7 @@ footer {
         margin:0 auto;
     }
     .left-container10 .crowd {
-        margin:0 auto;
-        margin-top:40px;
+        margin:5% auto;
         width:98vw;
         height:auto;
         padding:0;
@@ -941,7 +968,7 @@ footer {
     .right-container10{
         position:relative;
         width:100%;
-        padding-top:20px;
+        padding-top:30px;
     }
     .right-container10 .section-text1,.right-container20 .section-text1{
         font-size:30px;
@@ -961,6 +988,12 @@ footer {
         padding-bottom: 30px;
         display: flex;
         justify-content: center; /* Centers the button horizontally */
+    }
+    .right-container30 .logo{
+        display: none;
+    }
+    .right-container .button-container .btn{
+        margin-left:0;
     }
     .background20{
         position:absolute;
@@ -1001,7 +1034,11 @@ footer {
     }
     .custom-container20 .section-image{
         margin:0 auto;
-        margin-top:5%;
+        margin-top:-20px;
+        padding:0;
+    }
+    .custom-container20 .logo{
+        display:none;
     }
     .background10,.background20,.background30{
         display:none;
@@ -1018,7 +1055,7 @@ footer {
         padding-right: 20px;
     }
     .custom-container20 .button-section .orange-btn{
-        margin:0 15%;
+        margin:0 auto;
         padding:20px 30px;
     }
     .background30{
@@ -1041,21 +1078,22 @@ footer {
         padding:0;
     }
     .right-container30 .section-text1{
-        margin:10% auto;
+        margin:0 auto;
         text-align: center;
         font-size:35px;
         padding-left:20px;
         padding-right: 20px;
+        margin-top:15%;
     }
     .right-container30 .section-text2{
-        margin:0 6%;
+        margin:0 auto;
         font-size:18px;
         text-align: center;
         padding-left:20px;
         padding-right: 20px;
     }
     .right-container30 .section-image{
-        margin:0 auto;
+        margin-top:30px;
     }
     .right-container30 .button-section{
         margin:10% auto;
@@ -1145,6 +1183,13 @@ footer {
         padding: 20px;
         height:80%;
         width:100%;
+    }
+    .heading1{
+        z-index:100;
+    }
+    footer img{
+        width:50%;
+        margin:0 auto;
     }
     .whitebg10,.whitebg20,.whitebg30{
         display: none;
