@@ -226,7 +226,6 @@ html {
     margin-top:5%;
 }
 .bruh2{
-    background-color: white;
     height:100%;
 }
 .heading3{
@@ -626,7 +625,9 @@ footer {
     width: 100%;
     background-color:white;
 }
-
+.grouper{
+    display:none;
+}
 .footer-container-1,
 .footer-container-2,
 .footer-container-3 {
@@ -767,6 +768,37 @@ body {
     text-align: center; /* Center text */
     color: white; /* Adjust text color */
 }
+.grouper {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.grouper img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+/* Keyframes for smoother timing */
+@keyframes slideImages {
+    0% { opacity: 0; transform: translateX(100%); }
+    10% { opacity: 1; transform: translateX(0); }  /* Fully in */
+    25% { opacity: 1; transform: translateX(0); }  /* Stay visible */
+    35% { opacity: 0; transform: translateX(-100%); } /* Start exiting */
+    100% { opacity: 0; transform: translateX(-100%); }
+}
+
+/* Corrected animation delays */
+.grouper img:nth-child(1) { animation: slideImages 20s infinite 0s; }
+.grouper img:nth-child(2) { animation: slideImages 20s infinite 5s; }
+.grouper img:nth-child(3) { animation: slideImages 20s infinite 10s; }
+.grouper img:nth-child(4) { animation: slideImages 20s infinite 15s; }
+
 
 @media (max-width: 800px) {
     html,body{
@@ -779,10 +811,6 @@ body {
     .content {
         margin-top: 90px; /* Same as header height */
     }
-    .bruh1 { 
-        margin-top: 90px; /* Adjust based on header height */
-    }    
-    
     .sticky-header {
         position: fixed;
         top: 0;
@@ -863,481 +891,205 @@ body {
     .button-container .orange-btn {
       padding: 10px 20px;
       border-radius: 20px;
-    }
-    .homebike{
-        width:100%;
-    }
-    .left-container{
-        position:relative;
-        margin:0 auto;
+      background-image: url('../img/button1.png');
     }
     br {
         display: none;
       }
-    .left-container .section-text1,.left-container .section-text2{
-        margin:20px auto;
+      .bruh1 {
+        margin-top: 90px;
+        position: relative;
+        display: flex; /* Add this */
+        flex-direction: column; /* Stack text above image */
         text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
-        font-size:40px;
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .left-container, .homebike {
+        width: 100%; /* Full width */
+        height: auto;
+        position:relative;
+    }
+    
+    .homebike {
+        order: 2; /* Image should come below */
+    }
+    
+    .left-container {
+        order: 1; /* Text should come above */
+        position:relative;
+    }
+    .left-container .section-text1{
+        font-size:7vw;
+        margin:0 auto;
+        margin-top:20%;
+        text-align:center;
+        padding:0;
     }
     .left-container .section-text2{
-        font-size:15px;
+        font-size:2.8vw;
+        margin:2% auto;
+        padding:1%;
     }
-    .section-image{
-        width:30%;
-        height:auto;
-    }
-    .left-container .button-section{
-        margin:0 auto;
-        display: flex;
-        justify-content: center;
-        padding-bottom:20px;
-    }
-    .left-container,.homebike{
-        position: relative;
-    }
-    .background{
-        height:165%;
-    }
-    .custom-container{
-        position:relative;
-        margin: 0 auto;
-    }
-    .custom-container .section-text1,.custom-container .section-text2{
-        text-align:center;
-        margin:40px auto;
-        padding-left:20px;
-        padding-right: 20px;
-        font-size:45px;
-    }
-    .custom-container .section-text2{
-        font-size:20px;
-    }
-    .custom-container .section-image{
-        width:30%;
-        height:auto;
-        margin-left:10%;
-    }
-    .custom-container .button-section1{
-        display: flex;
-        justify-content: center;
-        margin:0 auto;
 
-    }
-    .button-container {
-        margin-right:0;   
-    }
-    .button-container .btn {
-        border-radius: 10px;
-        padding: 8px 15px; /* Smaller padding for better fit */
-        font-size: 18px; /* Adjust font size for smaller screens */
-        margin-left:0;
-    }
-    .homebike1{
-        position: relative;
-    }
-    .right-container{
-        position: relative;
-    }
-    .custom-container1{
-        position: relative;
-        margin-top:-100px;
-    }
     .left-container .button-section {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally (optional) */
-        gap: 10px; /* Space between buttons */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-start; /* Center buttons horizontally */
+        gap: 10px; /* Add spacing between buttons */
     }
     
-    .left-container .button-section .orange-btn,
-    .left-container .button-section .transparent-btn {
-        width: auto; /* Adjust as needed */
-        font-size: 18px;
+    .left-container .orange-btn {
+        order: 2; /* Move Download button to second position */
+        position:relative;
+        width: 100%; /* Optional: Make buttons full width */
+        max-width: 30%; 
         margin:0;
+        margin-left:-4%;
+        font-size:2.8vw;
+        padding:3% 8%;
     }
-    .heading1{
+    
+    .transparent-btn {
+        order: 1; /* Move Franchise Opportunities button to first position */
+        position:relative;
+        width: 100%; /* Optional: Make buttons full width */
+        max-width: 60%; 
+        margin-left:-4%;
+        font-size:2.8vw;
+        padding:3% 8%;
+    }
+    .bruh1{
         position: relative;
+        padding-bottom:15%;
+        background-color:#f8ecdc;
     }
-    .bike1,.bike2{
-        margin:0 auto;
+    .swiflyheading{
+        width:80%;
+        height:auto;
+        margin: 0 auto;
     }
-    /*BRUHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
-    .whitebg20,.right-container10,.left-container10,.right-container20,.custom-container20,.left-container30,.right-container30{
-        position: relative;
+    .heading2{
+        font-size:2.8vw;
     }
-    .whitebg10,.whitebg20,.whitebg30{
+    .groupbike{
         display:none;
     }
-    .background01,.bike01,.right-container01,.custom-container01,.bottom-left-image{
+
+    .grouper {
+        display: block;
+        z-index:2000;
+        height:100%;
+        top:5%;
+    }  
+    .grouper img{
+        width:100%;
+    }
+    .bruh2 {
+        display: block;
+        width: 100%;
+        position: relative; /* Keeps it in normal flow */
+        z-index: 1; /* Ensures it's above background if needed */
+        height:210vw;
+    }
+    
+    .bruh3,.bruh4 {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center content */
+        text-align: center;
+        width: 100%;
         position:relative;
     }
-    /*BRUHHHHHHHHHHHHHHHHHHHHHHH*/
-    .bike01{
-        height:110vw;
-        width:auto;
+    .bruh3{
+        height:170vw;
+        background-color: #fff4ec;
     }
-    .background1{
-        top:440%;
-        height:440%;
-        position:absolute;
+    .right-container {
+        order: 1; /* Ensures text container appears first */
+        width: 100%;
     }
-    .homebike1{
-        width:100%;
-    }
-    .right-container{
-        margin:0 auto;
-        width:100%;
-        padding-bottom:5%;
+    
+    .homebike1 {
+        order: 2; /* Ensures image appears below */
+        width: 100%;
+        height: auto;
+        margin-top:75vw;
     }
     .right-container .section-text1{
-        font-size:40px;
+        font-size:7vw;
         margin:0 auto;
-        text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
+        margin-top:20%;
     }
     .right-container .section-text2{
-        font-size:15px;
-        margin:0 auto;
-        text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container .button-section{
-        margin:0 auto;
-        padding-left:10%;
-        padding-right:10%;
-    }
-    .right-container .section-image{
-        width:30%;
-        height:auto;
-        margin-left:10%;
+        font-size:2.8vw;
+        margin:3% auto;
+        text-align:center;
+        padding-left:15%;
+        padding-right:15%;
     }
     .right-container .button-section {
+        margin:0 auto;
+        width:100%;
+    }
+    .right-container .button-section .orange-btn{
+        margin:0 auto;
+        max-width:60%;
+        font-size:2.8vw;
+        font-weight:600;
+        padding:3% 5%;
+    }
+    .bruh4 {
         display: flex;
-        justify-content: center;
-        margin:20px auto;
-    }
-    .right-container .orange-btn {
-        font-size:20px;
-        margin:0;
-    }
-    footer br {
-        display: inline; /* Show <br> inside the footer */
-    }
-    .heading1 {
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        font-size: 30px;
-        color: #474747;
-        z-index:1000;
-        text-align: center;
-        margin:0 auto;
-        background-color: #fff5ed;
-    }
-    .background10{
-        position:absolute;
-        top:880%;
-        height:100vw;
-    }
-    .left-container10{
-        width:100%;
-    }
-    .right-container30 .button-section .btn{
-        margin:0 auto;
-    }
-    .left-container10 .crowd {
-        margin:5% auto;
-        width:98vw;
-        height:auto;
-        padding:0;
-    }
-    .right-container10{
-        position:relative;
-        width:100%;
-        padding-top:30px;
-    }
-    .right-container10 .section-text1,.right-container20 .section-text1{
-        font-size:30px;
-        margin:0 auto;
-        text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container10 .section-text2,.right-container20 .section-text2{
-        font-size:15px;
-        margin:0 auto;
-        text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container10 .button-section{
-        padding-bottom: 30px;
-        display: flex;
-        justify-content: center; /* Centers the button horizontally */
-    }
-    .right-container30 .logo{
-        display: none;
-    }
-    .right-container .button-container .btn{
-        margin-left:0;
-    }
-    .background20{
-        position:absolute;
-        top:1038%;
-        height:129vw;;
-    }
-    .custom-container01 .section-text1{
-        text-align:center;
-        margin:0;
-        padding:0;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .custom-container01 .section-text2{
-        text-align:center;
-        font-size:15px;
-        margin:0;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .custom-container01 .button-section{
-        padding-bottom:30px;
-        margin:0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .custom-container20 .button-section,.right-container30 .button-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .custom-container01 .button-section .btn{
-        margin:0;
-    }
-    .custom-container20 .bike{
-        width:91vw;
-        height:auto;
-    }
-    .right-container .logo{
-        width:30%;
-        height:auto;
-    }
-    .custom-container20 .section-image{
-        margin:0 auto;
-        margin-top:-20px;
-        padding:0;
-    }
-    .custom-container20 .logo{
-        display:none;
-    }
-    .background10,.background20,.background30{
-        display:none;
-    }
-    .custom-container20 .section-text1{
-        margin:8% auto;
-        font-size:44px;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .custom-container20 .section-text2{
-        margin:8% auto;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .custom-container20 .button-section .orange-btn{
-        margin:0;
-        padding:20px 30px;
-    }
-    .left-container30 .bike{
-        width:96vw;
-        height:auto;
-        margin:13% auto;
-    }
-    .right-container30 .logo{
-        margin-left:5%;
-    }
-    .right-container30{
-        width:100%;
-        margin:0 auto;
-        left:0;
-        padding:0;
-    }
-    .right-container30 .section-text1{
-        margin:0 auto;
-        text-align: center;
-        font-size:35px;
-        padding-left:20px;
-        padding-right: 20px;
-        margin-top:15%;
-    }
-    .right-container30 .section-text2{
-        margin:0 auto;
-        font-size:18px;
-        text-align: center;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container30 .section-image{
-        margin-top:30px;
-    }
-    .right-container30 .button-section{
-        margin:10% auto;
-    }
-    
-    .background01{
-        height:900px;
-        top:000px;
-    }
-    .bottom-left-image{
-        display:none;
-    }
-    .custom-container01{
-        width:100%;
-    }
-    .right-container01{
-        width:100%;
-        left:0;
-    }
-    .bike01{
-        width:100%;
-        height:auto;
-    }
-    .custom-container01 .section-text2{
-        margin:10% auto;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .custom-container01 .section-text1{
-        margin:20% auto;
-        font-size:35px;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container01 .button-section .btn .orange-btn{
-        margin:0 auto;
-    }
-    .bruh6 .row{
-        display: flex; /* Change grid to flex for better stacking */
-        flex-direction: column; /* Stack containers vertically */
-    }
-    
-    .right-container20,.custom-container20 {
-        width: 100%; /* Make both containers full width */
-        align-items: center; /* Center content horizontally in mobile */
-    }
-    .right-container20 {
-        order: 2; /* Optional: Change the order of the containers if needed */
-        padding:0;
-        position:relative;
-        width:110%;
-        border-radius:0;
-      }
-    
-      .custom-container20 {
-        order: 1; /* Optional: Change the order of the containers if needed */
-      }
-    .right-container20,.custom-container20{
-        text-align:center;
-    }
-    .right-container20 .section-text1,.right-container20 .section-text2{
-        margin:0 auto;
-        padding-left:20px;
-        padding-right: 20px;
-    }
-    .right-container20 .section-text1{
-        padding-top:30px;
-    }
-    footer{
-        position:relative;
-    }
-    .footer-lower {
-        position:relative;
-        display: flex;
-        justify-content: space-between; /* Equal spacing between containers */
-        align-items: center; /* Center content vertically */
-        height: 100vw; /* Matches the lower image height */
+        justify-content: center; /* Centers children horizontally */
+        align-items: center; /* Centers children vertically */
+        flex-direction: column; /* Ensures vertical stacking */
         width: 100%;
-        background-image: url('../img/footerdown.png'); /* Background image */
-        background-size: cover;
-        background-position: center;
-        padding: 20px 0; /* Space for content inside */
+        text-align: center; /* Centers inline elements like text */
     }
-    /* Footer Upper */
-    .footer-upper {
-        flex-direction: column;
-        padding: 20px;
-        height:80%;
-        width:100%;
+    .heading3 {
+        display: block;  /* Ensures it takes full width */
+        margin: 0 auto;  /* Centers it horizontally */
+        margin-top:10%;
+        width: 80%;     
+        height: auto;
     }
-    .footer-upper .footer-container-2{
-        font-family: 'Inter', sans-serif;
-        font-weight: 600; /* Semi-bold */
-        font-size: 45px;
-    }
-    .heading1{
-        z-index:100;
-    }
-    .frantiger {
+    
+    .container-second {
         position: relative;
-        font-size: 18px; /* Adjust size if needed */
-        color: white; /* Change if necessary */
-        font-weight:600px;
-        text-align:center;
-        margin:10px auto;
-        bottom:0;
-        right:0;
-    }
-    footer img{
-        width:50%;
-        margin:0 auto;
-    }
-    .whitebg10,.whitebg20,.whitebg30{
-        display: none;
-    }
-    .footer-container-1,
-    .footer-container-2,
-    .footer-container-3 {
         width: 100%;
-        text-align: center;
+        height:140vw;
+        overflow: hidden; /* Hide overflowing images */
     }
-
-    .footer-container-3 .footer-button {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    /* Footer Lower */
-    .footer-lower {
-        flex-direction: column;
-        padding: 5px 0;
-        height:180%;
-    }
-    .footer-lower-container {
+    
+    .container-second .col-12 {
+        position: absolute;
         width: 100%;
-        margin-bottom: 15px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
     }
-
-    .footer-lower-container img {
-        width: 60%;
+    
+    /* Ensure the first image is visible initially */
+    .container-second .col-12:nth-child(1) {
+        opacity: 1;
     }
-
-    /* Font Adjustments */
-    .temp1 {
-        font-size: 20px;
-        padding:0;
+    
+    /* Keyframes for fading and replacing */
+    @keyframes slideGrid {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        30% { opacity: 1; }
+        40% { opacity: 0; }
+        100% { opacity: 0; }
     }
-
-    .temp2 {
-        font-size: 18px;
-        padding:0;
-    }
-
-    .temp3 {
-        font-size: 16px;
-        padding:0;
-    }
+    
+    /* Apply animation with delays */
+    .container-second .col-12:nth-child(1) { animation: slideGrid 9s infinite; }
+    .container-second .col-12:nth-child(2) { animation: slideGrid 9s infinite 3s; }
+    .container-second .col-12:nth-child(3) { animation: slideGrid 9s infinite 6s; }
+    
+    
+    
 }
