@@ -144,7 +144,7 @@ html {
     margin-left:7%;
 }
 .orange-btn {
-    background-color: #ff8454;;
+    background-color: #ff5c1c;
     color: #f3e9df;
     border: none;
     margin-left:0;
@@ -154,24 +154,25 @@ html {
     margin-right:20px;
     font-size: 1.2vw;
     font-weight:600;
+    opacity:0.7;
 }
 .orange-btn:hover {
-    background-color: rgb(255, 89, 0);
+    opacity:1;
     color:white;
 }
 .transparent-btn {
-    background-color: #ff8454;
+    background-color: #ff5c1c;
     color: #f3e9df;
     border-radius: 10px;
     padding: 20px 20px;
     cursor: pointer;
     font-size: 1.2vw;
     font-weight:600;
+    opacity:0.7;
 }
 .transparent-btn:hover {
     color: white;
-    background-color: rgb(255, 89, 0);
-    border-color: rgb(255, 89, 0);
+    opacity:1;
 }
 .custom-container {
     z-index: 10; 
@@ -302,7 +303,7 @@ html {
     align-items: center;
 }
 .right-container .orange-btn {
-    background-color: rgb(255, 89, 0);
+    background-color: #ff5c1c;
     color: white;
     border: none;
     margin-left:0;
@@ -312,9 +313,10 @@ html {
     margin-right:20px;
     font-size: 1.4vw;
     font-weight:400;
+    opacity:0.7;
 }
-.orange-btn:hover {
-    background-color: rgb(255, 120, 0);
+.right-container .orange-btn:hover {
+    opacity:1;
 }
 .heading1 {
     font-family: 'Inter', sans-serif;
@@ -604,6 +606,9 @@ html {
 .orange-btn:hover {
     background-color: rgb(255, 120, 0);
 }
+.button-container .orange-btn {
+    background: linear-gradient(45deg, #00B4D8, #0077B6);
+  }
 .bike01 {
     position: absolute; /* Position the bike image absolutely */
     right: 0; /* Align to the right */
@@ -895,7 +900,7 @@ body {
     .button-container .orange-btn {
       padding: 10px 20px;
       border-radius: 20px;
-      background-image: url('../img/button1.png');
+      background: linear-gradient(45deg, #00B4D8, #0077B6);
     }
     br {
         display: none;
@@ -1130,6 +1135,7 @@ body {
         font-size:4.7vw;
         font-weight:550;
         margin-top:10vw;
+        padding:0;
     }
     .right-container10 .section-text2,.right-container30 .section-text2{
         font-size:2.6vw;
@@ -1137,22 +1143,25 @@ body {
         padding-left:10%;
         padding-right:10%;
     }
+    .right-container10 .section-text2{
+        padding:0;
+    }
     .right-container30 .section-text2{
         padding-left:5%;
         padding-right:5%;
     }
     .right-container10 .button-section .btn{
         margin:0 auto;
-        font-size:2.6vw;
     }
     .right-container10 .button-section .btn,.right-container30 .button-section .btn{
         margin:5% auto;
-        font-size:2.6vw;
+        font-size:3vw;
     }
     .left-container10 {
         position: relative; /* Ensures it acts as a reference */
         z-index: 800; /* Lower than the image */
         width:100%;
+        margin-left:-3vw;
     }
     
     .left-container10 .crowd,.left-container30 .bike {
@@ -1164,7 +1173,7 @@ body {
         z-index: 1000; /* Ensures it's on top */
     }
     .left-container10 .crowd{
-        margin-top:-2vw;
+        margin-top:-8vw;
     }
     .right-container20{
         margin-top:-10vw;
@@ -1176,7 +1185,7 @@ body {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         width: 170%;
-        height: 68vw;
+        height: 80vw;
         display: block; /* Keeping it as block */
         background-color: white; /* Adjust as needed */
         float: right; /* Pushes it to the right */
@@ -1191,18 +1200,19 @@ body {
     .right-container20 .section-text2{
         font-size:2.6vw;
         margin:0;
+        padding:0;
         padding-left:5%;
         padding-right:5%;
     }
     .right-container20 .button-section .btn{
         margin:0 auto;
-        font-size:2.6vw;
+        font-size:3vw;
     }
     .custom-container20 {
         width: 100%;
         z-index: 900;
         position: relative;
-        margin-top:20vw;
+        margin-top:7vw;
     }
     
     .custom-container20 .bike {
@@ -1210,11 +1220,11 @@ body {
         height:auto;
         position:absolute;
         right:0;
-        margin-right:-6vw;
+        margin-right:-10vw;
     }
     .right-container30{
         width: 55%;
-        height: 80vw;
+        height: 85vw;
         display: block; /* Keeping it as block */
         border-top-left-radius: 20%;
         border-bottom-left-radius: 20%;
@@ -1239,16 +1249,190 @@ body {
     .bruh8 {
         position: relative; /* Ensures child elements can be positioned inside */
         width: 100%;
-        height: 100vh; /* Makes sure it takes full height */
+        height: 150%; /* Makes sure it takes full height */
         overflow: hidden; /* Prevents overflow */
     }
     .bottom-left-image {
-        position: absolute;
+        position: relative;
         top: 0; /* Moves it to the top */
         right: 0; /* Moves it to the right */
-        width: 15vw; /* Adjust as needed */
+        width: 30vw; /* Adjust as needed */
         height: auto;
         transform: scaleX(-1) scaleY(-1); /* Mirrors the image both ways */
         z-index: 900; /* Keeps it above other elements */
+        margin-left:75vw;
+    }
+    .custom-container01{
+        position: relative;
+        padding:0;
+        text-align:left;
+        margin:0;
+        width:100%;
+    }
+    .custom-container01{
+        display:block;
+    }
+    .custom-container01 .section-text1 br{
+        display:block;
+    }
+    .custom-container01 .section-text1{
+        font-size:7vw;
+        margin:0;
+        padding-left:5%;
+        width:100%;
+    }
+    .custom-container01 .section-text2{
+        font-size:3vw;
+        margin:0;
+        padding-left:5%;
+        padding-right:15%;
+        line-height: 2.5;
+        margin-top:5%;
+    }
+    .right-container01{
+        position: relative;
+        margin:0;
+        width:100%;
+    }
+    .bike01{
+        width:100%;
+        position: relative;
+    }
+    .custom-container01 .button-section .btn {
+        display: block;
+        margin: 0 auto;
+        margin-top:5%;
+        font-size:3vw;
+        padding:3% 6%;
+    }
+    footer{
+        position: relative;
+    }
+    .footer-upper {
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        height: 25vh; /* Adjust if needed */
+        text-align: center;
+        gap:5vw;
+    }
+    .footer-container-1 img {
+        width: 20vw; /* Adjust size */
+        height: auto;
+        position: relative;
+        top:5vw;
+    }
+    .footer-container-2,.footer-container-1{
+        margin-top:3vh;
+        position: relative;
+        width: 100%;
+    }
+    .footer-container-2 p{
+        font-size:5vw;
+        padding:0;
+    }
+    .footer-container-3{
+        width: 100%;
+        padding-bottom:10vw;
+        margin-top:-3vw;
+    }
+    .footer-button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #ff6600; /* Adjust color */
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 5vw; /* Change this value to adjust font size */
+        font-weight: bold; /* Optional: Makes text bolder */
+    }  
+    .footer-lower-container br{
+        display: block;
+    }
+    .footer-lower-container{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-lower {
+        flex-direction: column;
+        padding: 5px 0;
+        height:250vw;
+    }
+    .company{
+        position: relative;
+        padding:0;
+        margin:0;
+        text-align: center;
+        margin: 0 auto;
+        bottom:0;
+        left:0;
+        font-size:4.5vw;
+        padding-bottom:5vw;
+    }
+    .footer-lower-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Center text */
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-lower-container img {
+        width: 50vw;
+        margin: 0 auto;
+        margin-left:-20%;
+        left:0;
+        padding:0;
+        margin-top:8vw;
+        position: relative;
+    }
+
+    /* Font Adjustments */
+    
+    .temp2 {
+        font-size: 18px;
+        padding:0;
+        text-align: center;
+    }
+
+    .temp3 {
+        font-size: 16px;
+        padding:0;
+        text-align: center;
+    }
+    .footer-container-3 .footer-button {
+        background-color: rgb(255, 89, 0);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+    .frantiger{
+        position: relative;
+        margin:0 auto;
+        text-align:center;
+        font-size:4vw;
+        padding-top:8vw;
+        right:0;
+    }
+    .menu{
+        height:40px;
+        margin-left:-1vw;
+    }
+    .button-container .orange-btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #00B4D8, #0077B6);
+        font-size:3.5vw;
+      }
+    .header-image{
+        margin-left:-8vw;
     }
 }
